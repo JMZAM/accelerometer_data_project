@@ -10,8 +10,10 @@ Note that extensive details on the project design can be found [here](http://arc
 
 In the original download link, authors describe the following processing:
 
-> The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain
-> Anguita *et al*, 2013 . Please view full reference in the bottom of the README.md file.
+> The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain. 
+
+> From Anguita *et al*, 2013 . Please view full reference in the bottom of the README.md file.
+
 Also, the variables created reflect the author´s processing as follows:
 
 > The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
@@ -62,7 +64,8 @@ Also, the variables created reflect the author´s processing as follows:
 
 > Additional vectors obtained by averaging the signals in a signal window sample. These are used on the angle() variable: gravityMean, tBodyAccMean
 > tBodyAccJerkMean, tBodyGyroMean, tBodyGyroJerkMean.
-> Anguita *et al*, 2013 . Please view full reference in the bottom of the README.md file.
+
+> From Anguita *et al*, 2013 . Please view full reference in the bottom of the README.md file.
 
 ## Additional processing by the code in this repository
 
