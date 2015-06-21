@@ -11,7 +11,6 @@ Note that extensive details on the project design can be found [here](http://arc
 In the original download link, authors describe the following processing:
 
 > The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain
-> - Anguita *et al*, 2013
 
 Also, the variables created reflect the author´s processing as follows:
 
@@ -63,7 +62,7 @@ Also, the variables created reflect the author´s processing as follows:
 
 > Additional vectors obtained by averaging the signals in a signal window sample. These are used on the angle() variable: gravityMean, tBodyAccMean
 > tBodyAccJerkMean, tBodyGyroMean, tBodyGyroJerkMean.
-
+> - Anguita *et al*, 2013 . Please view full reference in the bottom of the README.md file.
 
 ## Additional processing by the code in this repository
 
@@ -78,7 +77,7 @@ The full variable description can be found in the following table:
 Number | Name | Description | Units
 ---|---|---|---
 1| subject | Number assigned to each subject from 1-30 | Does not apply
-2| Activity | Name of activity from: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING. | Does not apply 
+2| activity | Name of activity from: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING. | Does not apply 
 3| tbodyacc_mean_x| The mean of the filtered body acceleration signal in the x axis in the time domain| Normalized and bounded within [-1,1]
 4| tbodyacc_mean_y| The mean of the filtered body acceleration signal in the y axis in the time domain| Normalized and bounded within [-1,1]
 5| tbodyacc_mean_z| The mean of the filtered body acceleration signal in the z axis in the time domain| Normalized and bounded within [-1,1]
